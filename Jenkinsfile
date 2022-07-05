@@ -37,5 +37,15 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
+	} post {
+		always {
+			echo 'Completed'
+		}
+		success {
+			echo 'successful yay'
+		}
+		failure {
+			echo 'borked'
+		}
 	}
 }
