@@ -37,7 +37,9 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
-	} post {
+	}
+	
+	post {
 		always {
 			echo 'Completed'
 		}
