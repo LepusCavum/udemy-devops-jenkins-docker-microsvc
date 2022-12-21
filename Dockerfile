@@ -1,11 +1,3 @@
-# FROM openjdk:8-jdk-alpine
-# VOLUME /tmp
-# EXPOSE 8000
-# ADD target/*.jar app.jar
-# ENV JAVA_OPTS=""
-# ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
-
-
 FROM jenkins/jenkins:2.346.1-jdk11
 USER root
 RUN apt-get update && apt-get install -y lsb-release
